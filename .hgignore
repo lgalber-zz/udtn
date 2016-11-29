@@ -1,0 +1,23 @@
+syntax: glob
+
+*.a
+*.bin
+*.map
+*.png
+*.log
+*.elf
+*.ihex
+*.inga
+*.hex
+*.eep
+*.sky
+*.pyc
+*.cproject
+*.project
+.settings
+obj_*
+doc/html
+patches-*
+tools/tunslip6
+platform/avr-zigbit/contiki-avr-zigbit-main.c
+

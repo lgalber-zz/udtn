@@ -1,0 +1,16 @@
+
+all: loadable_prg
+
+#APPS=abcbits
+TARGET=avr-zigbit
+
+#UIP_CONF_IPV6=1	   //tells it to use ipv6 instead of ipv4
+RF230BB=1             //Use radio driver that communicates with the core MAC layer. Now the default.
+#COFFEE_FILES=1        //Use coffee file system in EEPROM
+#COFFEE_FILES=2        #//Use coffee file system in program flash
+#COFFEE_ADDRESS=0xnnnn //Override default coffee file system starting address
+LDLIBS = -lm 
+CONTIKI = ../..
+
+
+include $(CONTIKI)/Makefile.include

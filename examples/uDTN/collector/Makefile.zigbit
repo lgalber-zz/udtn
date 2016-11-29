@@ -1,0 +1,15 @@
+all: collector
+CFLAGS += -DPROJECT_CONF_H=\"project-conf.h\"
+#Define CONTIKI_NO_NET=1 for a passthrough ipv6/6lowpan interface using fakeuip.c
+#Define UIP_CONF_IPV6=0 to include the uip6 stack (for rpl, internal webserver)
+#Do make clean when switching to remove the duplicate library modules
+#CONTIKI_NO_NET=1
+
+RF230BB=1
+COFFEE_FILES=4
+CFS=coffee
+CONF_DTN=1
+
+CONTIKI = ../../..
+
+include $(CONTIKI)/Makefile.include
